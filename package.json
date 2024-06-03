@@ -1,0 +1,20 @@
+{
+  "name": "site-inspector",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Given a list of URLs in an Excel file, read those, store the response as a file, and determine what version of SFCC it is running.",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js --max=1 --log-level=debug --file=test-input.xlsx",
+    "inspect": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "winston": "^3.11.0",
+    "xlsx": "^0.18.5",
+    "xlsx-populate": "^1.21.0",
+    "yargs": "^17.7.2"
+  }
+}
